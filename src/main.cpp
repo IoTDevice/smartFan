@@ -40,7 +40,7 @@ void setup() {
   // put your setup code here, to run once:
   WiFi.mode(WIFI_AP);
   // 设置IP地址网关和子网掩码  
-  WiFi.softAPConfig(local_IP, gateway, subnet);  
+  // WiFi.softAPConfig(local_IP, gateway, subnet);  
   // 设置wifi的名字和密码
   WiFi.softAP(AP_SSID);
 
