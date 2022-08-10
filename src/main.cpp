@@ -29,7 +29,7 @@ void handleNotFound(){
 void handlePWMApi(){
   String valStr = http_server.arg("value");
   int val = atoi(valStr.c_str());
-  analogWrite(LED_BUILTIN,val);//满占空比灯灭
+  analogWrite(PIN_FAN,val);//满占空比灯灭
   delay(1);
   http_server.send(200, "application/json", "{\"code\":0,\"message\":\"success\"}");
 }
